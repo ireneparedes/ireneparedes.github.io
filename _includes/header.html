@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" class="nav-item {% if page.url == "/" %}active{% endif %}">
+        Home
+      </a>
+      <a href="/about" class="nav-item {% if page.url == "/about.html" %}active{% endif %}">
+        Bio
+      </a>
+      <a href="/publications" class="nav-item {% if page.url == "/publications.html" %}active{% endif %}">
+        Publications
+      </a>
+      <a href="/contact" class="nav-item {% if page.url == "/contact.html" %}active{% endif %}">
+        Contact
+      </a>
+    </nav>
+

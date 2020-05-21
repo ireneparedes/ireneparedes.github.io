@@ -1,0 +1,2 @@
+# Ignore html files used for layout as some tags are not closed
+*.html
