@@ -2,25 +2,44 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
   </head>
 
   <body>
-    <nav>
-      <a href="/" class="nav-item {% if page.url == "/" %}active{% endif %}">
-        Home
-      </a>
-      <a href="/about" class="nav-item {% if page.url == "/about.html" %}active{% endif %}">
-        Bio
-      </a>
-      <a href="/publications" class="nav-item {% if page.url == "/publications.html" %}active{% endif %}">
-        Publications
-      </a>
-      <a href="/contact" class="nav-item {% if page.url == "/contact.html" %}active{% endif %}">
-        Contact
-      </a>
-    </nav>
-
+    
+  <nav class="navbar fixed-top navbar-expand-sm bg-white navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">IPL</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item {% if page.url == "/publications.html" %}active{% endif %}">
+            <a href="/publications" class="nav-link">
+              Publications
+            </a>
+          </li>
+          <li class="nav-item {% if page.url == "/about.html" %}active{% endif %}">
+            <a href="/about" class="nav-link">
+              Bio
+            </a>
+          </li>
+          <li class="nav-item {% if page.url == "/contact.html" %}active{% endif %}">
+            <a href="/contact" class="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
