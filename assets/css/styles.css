@@ -4,3 +4,17 @@ body {
   /* min-height: 75rem;
   padding-top: 4.5rem; */
 }
+
+.highlight {
+  color: #4e9525;
+}
+
+.home h1 {
+  font-size: 2rem;
+}
+
+.home figure {
+  top: 0;
+  right: 0;
+  margin-top: 3.5rem;
+}
