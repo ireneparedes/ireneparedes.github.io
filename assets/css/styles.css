@@ -6,14 +6,36 @@ body {
   padding-top: 4.5rem; */
 }
 
+/* Typography */
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   color: #212529;
   font-weight: 400;
 }
 
+.highlight {
+  color: #4e9525;
+}
+
+/* Navigation */
+p a {
+  color: #495057;
+  box-shadow: inset 0 -0.25rem 0 #a9ca92;
+  transition: box-shadow 250ms ease, color 250ms ease;
+}
+
+.lead a {
+  box-shadow: inset 0 -0.4rem 0 #a9ca92;
+}
+
+p a:hover {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 0 -1.375rem 0 #4e9525;
+}
+
 .navbar-brand,
 .navbar-brand:hover,
-.navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   color: rgba(0,0,0,.7);
   font-weight: 500;
   -webkit-transition: color 0.1s ease-out;
@@ -21,15 +43,24 @@ body {
   transition: color 0.1s ease-out;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .active>.nav-link {
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link {
   color: #4e9525;
 }
 
-.highlight {
-  color: #4e9525;
+.nav-item:first-child .nav-link {
+  padding-left: 0;
 }
 
+@media (min-width: 992px)
+{
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: .75rem;
+    padding-left: .75rem;
+  }
+}
+
+/* Images */
 .rounded {
   border-radius: 0.625rem !important;
 }
@@ -38,6 +69,7 @@ body {
   box-shadow: 0.5rem 0.5rem 0 rgba(233, 239, 241, 0.5);
 }
 
+/* Homepage */
 .home h1 {
   font-size: 2rem;
 }
