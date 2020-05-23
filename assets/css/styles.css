@@ -101,13 +101,13 @@ p a:hover {
 }
 
 #home-pic {
-  position: absolute;
-  left: 33%;
-  top: .5rem;
+  position: relative;
+  margin-bottom: -8rem;
+  z-index: 1;
 }
 
 #home-bg {
-  margin-top: 6rem;
+  position: relative;
 }
 
 #home-pic-svg {
