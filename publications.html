@@ -9,15 +9,13 @@ title: Publications - Irene Paredes Losada
             <div class="row justify-content-lg-between">
                 <div class="col-lg-6">
                     <h1 class="mb-4">Publications</h1>
-                    <p><strong>I. Paredes, F. Ramírez, M.G. Forero, A.J. Green (2019).</strong><br>
-                        Stable isotopes in helophytes reflect anthropogenic nitrogen pollution in entry streams at the Doñana World
-                        Heritage Site. Ecological Indicators 97: 130-140.<br>
-                        <a href="https://doi.org/10.1016/j.ecolind.2018.10.009">https://doi.org/10.1016/j.ecolind.2018.10.009</a>
+
+                    {% for publication in site.data.publications %}
+                    <p><strong>{{ publication.authors }}</strong><br>{{ publication.description }}<br>
+                        <a href="{{ publication.url }}">{{ publication.url }}</a>
                     </p>
-                    <p><strong>M.I. Sánchez, I. Paredes, M. Lebouvier, A.J. Green (2016).</strong><br>
-                        Functional role of native and invasive filter-feeders, and the effect of parasites: learning from
-                        hypersaline ecosystems. PLoS ONE 11(8): e0161478.<br>
-                        <a href="https://doi.org/10.1371/journal.pone.0161478">https://doi.org/10.1371/journal.pone.0161478</a></p>
+                    {% endfor %}
+
                 </div>
                 <div class="col-lg-5">
                     <img src="/assets/img/publications.jpg" alt="Publications" class="img-fluid rounded shadow-3d">
@@ -31,18 +29,11 @@ title: Publications - Irene Paredes Losada
             <div class="row justify-content-lg-between">
                 <div class="col-lg-6">
                     <h2 class="mb-4">Presentations at conferences</h2>
-                    <p><strong>ALSO Aquatic Sciences Meeting</strong> 2015 in Granada, Spain (22nd to 27th February 2015).
-                        Poster presentation: Stable Isotopes as tracers of anthropogenic nutrient inputs in two different
-                        aquatic systems in southern Spain.</p>
-                    <p><strong>Aquatic Biodiversity and Ecosystems Conference</strong> 2015 in Liverpool, United Kingdom (30th
-                        August to 4th September 2015). Oral presentation: Piecing together the water quality deterioration in
-                        the Doñana marsh (southwester Spain) over the past 20 year.</p>
-                    <p><strong>SEFS10 Symposium of European Freshwater Sciences</strong> 2017 in Olomouc, Czech Republic (2nd
-                        July to 7th July 2017). Oral presentation: Identification of nitrogen pollution sources in the Doñana
-                        wetlands (southwestern Spain) using stable isotopes.</p>
-                    <p><strong>AIL Conference</strong> 2018 in Coimbra, Portugal (24th to 29th June 2018). Oral presentation:
-                        Nitrogen stable isotopes (δ15N) in halophytes as a proxy for anthropogenic nitrogen pollution in
-                        intermittent Mediterranean wetlands.</p>
+
+                    {% for presentation in site.data.presentations %}
+                    <p><strong>{{ presentation.event }}</strong> {{ presentation.description }}</p>
+                    {% endfor %}
+                    
                 </div>
                 <div class="col-lg-5">
                     <img src="/assets/img/presentations.jpg" alt="Presentations" class="img-fluid rounded shadow-3d">
