@@ -35,7 +35,8 @@ p a:hover {
 /* Navigation */
 .navbar {
   z-index: 1;
-  box-shadow: 0 4px 2px -2px rgba(0,0,0,.05);
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,.025);
+  border-bottom: 1px solid #e9ecee!important;
 }
 
 .navbar-expand>.container, .navbar-expand>.container-fluid, .navbar-expand>.container-lg, .navbar-expand>.container-md, .navbar-expand>.container-sm, .navbar-expand>.container-xl {
