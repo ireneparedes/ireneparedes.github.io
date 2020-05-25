@@ -123,3 +123,8 @@ p a:hover {
   filter: drop-shadow(-18px 8px 0px rgba(169, 202, 146, .7));
   /* Similar syntax to box-shadow */
 }
+
+/* Image gallery */
+ul.image-gallery {
+  padding-inline-start: 0
+}

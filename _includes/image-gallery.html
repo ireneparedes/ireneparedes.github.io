@@ -1,4 +1,4 @@
-<div class="row text-center text-lg-left image-gallery">
+<ul class="row text-center text-lg-left image-gallery">
     {% for file in site.static_files %}
       {% if file.path contains include.folder %}
         {% if file.extname == '.jpg' or 
@@ -17,4 +17,4 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-</div>
+</ul>
