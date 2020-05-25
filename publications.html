@@ -9,13 +9,13 @@ title: Publications - Irene Paredes Losada
             <div class="row justify-content-lg-between">
                 <div class="col-lg-6">
                     <h1 class="mb-4">Publications</h1>
-                    <h2 class="mb-3">Scientific Journals</h2>
+                        <h2 class="mb-2">Scientific Journals</h2>
 
-                    {% for publication in site.data.publications %}
-                    <p><strong>{{ publication.authors }}</strong><br>{{ publication.description }}<br>
-                        <a href="{{ publication.url }}">{{ publication.url }}</a>
-                    </p>
-                    {% endfor %}
+                         {% for publication in site.data.publications %}
+                            <p><strong>{{ publication.authors }}</strong><br>{{ publication.description }}<br>
+                              <a href="{{ publication.url }}">{{ publication.url }}</a>
+                         </p>
+                         {% endfor %}
 
                 </div>
                 <div class="col-lg-5">
