@@ -123,6 +123,3 @@ p a:hover {
   filter: drop-shadow(-18px 8px 0px rgba(169, 202, 146, .7));
   /* Similar syntax to box-shadow */
 }
-
-/* Image gallery */
-.image-gallery a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
